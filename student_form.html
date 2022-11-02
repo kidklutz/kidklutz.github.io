@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+    <head>
+        <title>Milestone 2: Assistantships</title>
+		<link rel="stylesheet" type="text/css" href="carit_css.css">
+    </head>
+    <body class="homepage_body">
+        <div class="banner">
+			<table align="center" width="100%">
+				<tr>
+					<td rowspan="2">
+						<a  href="http://ccse.kennesaw.edu/it" target="_parent">
+                            <img src="images/kennesaw_logo.png" class="banner_logo" title="KSU IT Department">
+                        </a>
+					</td>
+					<td class="title_cell" colspan="5"><h1 class="banner_title">Center for Applied Research in Information Technology<h1></td>
+				</tr>
+				<tr>
+					<td class="menu_cells"><a href="index.html" target="_self" class="menu_links">Home</a></td>
+					<td class="menu_cells"><a href="faculty.html" target="_self" class="menu_links">Faculty</a></td>
+					<td class="menu_cells"><a href="events.html" target="_self" class="menu_links">Events</a></td>
+					<td class="menu_cells"><a href="student_form.html" target="_self" class="menu_links">Assistantships</a></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+        <div class="faculty_frame_body" id="event_news_holder"></div>
+        <script>
+			document.getElementById("event_news_holder").style.backgroundImage = "url(\"images/news_holder6.png\")";
+		</script>
+		<h1 class="faculty_header" align="center">Assistantships</h1>
+        <div class="div_mid">
+            <div class="div_contact">
+				<table align="right" class="edge_tables">
+					<tr align="left">
+						<th class="contact_header">Contact Us</th>
+					</tr>
+					<tr align="left">
+						<td>Jessie Eisenberg</td>
+					</tr>
+					<tr align="left">
+						<td>(422)120-9227</td>
+					</tr>
+					<tr><td></td></tr>
+					<tr align="left">
+						<td>lluthor@gmail.com</td>
+					</tr>
+				</table>
+			</div>
+            <div class="div_iframe" align="center">
+                <div style="width: 80%">
+					<h3  class="form_headers" style="font-size: 1.8em;">Want to Work at CARIT? </h3>
+					<p >Well now's your chance! Our company has four part-time positions open at our on campus office. If you’re interested please check the form below to see if you qualify for any of these positions. We hope to see you soon!</p>
+					<form border="1px solid black" align="left" id="job_check" onsubmit="return false">
+						<h3 class="form_headers">What is your current college level?</h3>
+						<input type="radio" id="under" name="status" value="Undergraduate" onclick="showCourses()"> <label for="under">Undergraduate</label><br>
+						<input type="radio" id="grad" name="status" value="Graduate" onclick="showCourses()"> <label for="grad">Graduate</label><br><br>
+
+						<div id="grad_courses" display="none">
+							<h3 class="form_headers">What grades did you receive in the listed coursework?</h3>
+							<label>IT 7113 Data Visualization </label><br>
+							<label>A:</label><input type="radio" name="grad_1" value="4">
+							<label>B:</label><input type="radio" name="grad_1" value="3">
+							<label>C:</label><input type="radio" name="grad_1" value="2">
+							<label>D:</label><input type="radio" name="grad_1" value="1">
+							<label>F:</label><input type="radio" name="grad_1" value="0"><br><br>
+
+							<label>IT 6713 Business Intelligence </label><br>
+							<label>A:</label><input type="radio" name="grad_2" value="4">
+							<label>B:</label><input type="radio" name="grad_2" value="3">
+							<label>C:</label><input type="radio" name="grad_2" value="2">
+							<label>D:</label><input type="radio" name="grad_2" value="1">
+							<label>F:</label><input type="radio" name="grad_2" value="0"><br><br>
+
+							<label>IT 6450 Cloud Architecture</label><br>
+							<label>A:</label><input type="radio" name="grad_3" value="4">
+							<label>B:</label><input type="radio" name="grad_3" value="3">
+							<label>C:</label><input type="radio" name="grad_3" value="2">
+							<label>D:</label><input type="radio" name="grad_3" value="1">
+							<label>F:</label><input type="radio" name="grad_3" value="0"><br><br>
+
+							<label>IT 7270 Server Administration</label><br>
+							<label>A:</label><input type="radio" name="grad_4" value="4">
+							<label>B:</label><input type="radio" name="grad_4" value="3">
+							<label>C:</label><input type="radio" name="grad_4" value="2">
+							<label>D:</label><input type="radio" name="grad_4" value="1">
+							<label>F:</label><input type="radio" name="grad_4" value="0"><br><br>
+
+							<button onclick="qualify('grad_courses')">Evaluate</button>
+							<p id="grad_grade" display="none">Calculated GPA:</p>
+
+						</div>
+						<div id="under_courses" display="none">
+							<h3 class="form_headers">What grades did you receive in the listed coursework?</h3>
+							<label>CSE 3203 Mobile System Overview</label><br>
+							<label>A:</label><input type="radio" name="under_1" value="4">
+							<label>B:</label><input type="radio" name="under_1" value="3">
+							<label>C:</label><input type="radio" name="under_1" value="2">
+							<label>D:</label><input type="radio" name="under_1" value="1">
+							<label>F:</label><input type="radio" name="under_1" value="0"><br><br>
+
+							<label>IT 4213 Mobile Web Development</label><br>
+							<label>A:</label><input type="radio" name="under_2" value="4">
+							<label>B:</label><input type="radio" name="under_2" value="3">
+							<label>C:</label><input type="radio" name="under_2" value="2">
+							<label>D:</label><input type="radio" name="under_2" value="1">
+							<label>F:</label><input type="radio" name="under_2" value="0"><br><br>
+
+							<label>IT 3123 Hardware and Software Concepts</label><br>
+							<label>A:</label><input type="radio" name="under_3" value="4">
+							<label>B:</label><input type="radio" name="under_3" value="3">
+							<label>C:</label><input type="radio" name="under_3" value="2">
+							<label>D:</label><input type="radio" name="under_3" value="1">
+							<label>F:</label><input type="radio" name="under_3" value="0"><br><br>
+
+							<label>CSE 2100 Database Systems</label><br>
+							<label>A:</label><input type="radio" name="under_4" value="4">
+							<label>B:</label><input type="radio" name="under_4" value="3">
+							<label>C:</label><input type="radio" name="under_4" value="2">
+							<label>D:</label><input type="radio" name="under_4" value="1">
+							<label>F:</label><input type="radio" name="under_4" value="0"><br><br>
+
+							<button type="button" onclick="qualify('under_courses');'return false;'">Evaluate</button>
+							<p id="under_grade" ></p>
+						
+						</div>
+
+						<h3 id="condition" display="none" class="form_headers"></h3>
+						<p id="con_text" display="none"></p>
+
+						<figure id="form_link" display="none">
+							<a href="http://ccse.kennesaw.edu/it" target="_parent">
+								<img src="images/it_logo.png" title="KSU IT Department">
+							</a>
+							<figcaption><h2 class="des_headers" align="center">We Hope to See you Soon!</h2></figcaption>
+						</figure>
+
+					</form>
+					<script>
+						document.getElementById("under_courses").style.display = "none";
+						document.getElementById("grad_courses").style.display = "none";
+						document.getElementById("form_link").style.display = "none";
+
+						function showCourses(status){
+							var status = document.getElementsByName("status");
+							for(var i = 0; i<status.length ; i++){
+								if(status[i].checked && i==0){
+									document.getElementById("under_courses").style.display = "block";
+									document.getElementById("grad_courses").style.display = "none";
+									resetCourseGrades("grad_courses");
+								}else if(status[i].checked && i==1){
+									document.getElementById("grad_courses").style.display = "block";
+									document.getElementById("under_courses").style.display = "none";
+									resetCourseGrades("under_courses");
+								}
+							}
+						}
+						function resetCourseGrades(div_id){
+							var inputs = document.getElementById(div_id).getElementsByTagName("input");
+							for(var i=0; i<inputs.length; i++){
+								inputs[i].checked = false;
+							}
+							document.getElementById("condition").style.display = "none";
+							document.getElementById("con_text").style.display = "none";
+							document.getElementById("under_grade").style.display = "none";
+							document.getElementById("grad_grade").style.display = "none";
+							document.getElementById("form_link").style.display = "none";
+						}
+						function qualify(div_id){
+							let grades = document.getElementById(div_id).getElementsByTagName("input");
+							var hope = 0;
+							for(var i = 0; i<grades.length; i++){
+								if(grades[i].checked){
+									hope += parseInt(grades[i].value);
+								}
+							}
+							hope /= 4;
+							var ele = "Calculated GPA: "+ hope;
+
+							if(div_id == "under_courses"){
+								document.getElementById("under_grade").style.display = "block";
+								document.getElementById("under_grade").innerHTML = ele;
+							}else{
+								document.getElementById("grad_grade").style.display = "block";
+								document.getElementById("grad_grade").innerHTML = ele;
+							}
+								
+							if((div_id == "grad_courses") && (hope >= 3.7)){
+								document.getElementById("condition").innerHTML = "Congratulations, you qualify!";
+								document.getElementById("con_text").innerHTML = "You meet the qualifications for one of our graduate positions. Come on out and apply at our on campus location or come see us at the mid-semester career fair.";
+								document.getElementById("form_link").style.display = "block";
+							}else if((div_id == "under_courses") && (hope >= 3.2)){
+								document.getElementById("condition").innerHTML = "Congratulations, you qualify!";
+								document.getElementById("con_text").innerHTML = "You meet the qualifications for one of our undergraduate positions. Come on out and apply at our on campus location or come see us at the mid-semester career fair.";
+								document.getElementById("form_link").style.display = "block";
+							}else{
+								document.getElementById("condition").innerHTML = "We’re sorry but you're not what we are looking for.";
+								document.getElementById("con_text").innerHTML = "At this time you do not meet the credentials we are looking for. Please don’t let this stop you from considering applying for positions here in the future. Thank you.";
+								document.getElementById("form_link").style.display = "none";
+							}
+
+							document.getElementById("condition").style.display = "block";
+							document.getElementById("con_text").style.display = "block";
+						}
+					</script>
+				</div>
+            </div>
+            <div class="div_site_map" align="center">
+				<table align="left" class="edge_tables">
+					<tr>
+						<th align="right" class="site_map_header">Site Map</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html" target="_self" class="site_map_link">
+								Index
+							</a>
+                        </td>
+					</tr>
+                    <tr>
+                        <td>
+							<a href="faculty.html" target="_self" class="site_map_link">
+								Faculty
+							</a>
+						</td>
+                    </tr>
+					<tr>
+                        <td>
+							<a href="events.html" target="_self" class="site_map_link">
+								Events
+							</a>
+						</td>
+                    </tr>
+				</table>
+			</div>
+        </div>
+        <div class="bottom_banner">
+		</div>
+    </body>
+</html>

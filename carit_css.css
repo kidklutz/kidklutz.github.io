@@ -1,0 +1,270 @@
+
+/*Index.html*/
+.homepage_body{
+	margin: 0px;
+	padding: 0;
+}
+.banner{
+	border-bottom: 3px solid black;
+	width: 100%;
+	background-color: #DE3800;
+}
+.banner_logo{
+	width: 240px;
+	height: 135px;
+}
+.banner_title{
+	text-align: center;
+	color: #fcc726; 
+	font-size: 2.5em;
+	/*border-bottom: 1px solid #fcc726;;*/
+}
+.title_cell{
+	border-bottom: 2px solid  #fcc726;
+}
+.menu_cells{
+	width: 5%;
+	color: #fcc726;
+}
+.menu_links{
+	color: #fcc726;
+	text-decoration: none;
+}
+.menu_cells:hover {
+	background-color: #FF784A;
+}
+.kennesaw_logo{
+	width: 384px;
+	height: 216px;
+}
+.newsBackground{
+	background-image: url("images/news_holder.png");
+	border: 1px solid black;
+	height: 300px;
+	width: 100%;
+}
+.tags_table{
+	padding: 10px;
+}
+.tags_right_border{
+	border-right: 1px solid #DE3800;
+	padding: 20px;
+	font-size: 1.6em;
+}
+.tags_other{
+	padding: 20px; 
+	font-size: 1.6em;
+	color: #dea700;
+}
+.div_container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 960px;
+}
+.edge_tables{
+	margin-top: 25px;
+}
+.div_contact{
+	float: left;
+	height: 100%;
+	width: 12%;
+	padding-right: 5px;
+}
+.contact_header{
+	border-bottom: 1px solid #DE3800; 
+	color: #dea700
+}
+.div_iframe{
+	float: left;
+	margin-left: 2.4%;
+	border-right: 2px solid #DE3800;
+	border-left: 2px solid #DE3800;
+	height: 100%;
+	width: 70%;
+}
+.frame_des{
+	width: 80%;
+	height: 90%;
+	border: none;
+	display: inherit;
+	
+}
+.div_site_map{
+	float: right;
+	height: 100%;
+	width: 12%;
+	padding-left: 5px;
+}
+.site_map_header{
+	border-bottom: 1px solid #DE3800; 
+	color: #dea700;
+}
+.bottom_banner{
+	border-top: 3px solid black;
+	height: 50px;
+	background-color: #DE3800;
+}
+
+/* news_elements.html*/
+.news_body{
+	background-image: url("images/news_holder.png");
+	background-repeat: none;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.news_headline{
+	vertical-align: bottom;
+	text-align: center;
+}
+.news_table{
+	width: 100%;
+	height: 300px;
+	/*border: 1px solid black;*/
+}
+textarea{
+	resize: none;
+	text-align: center;
+	width: 60%;
+	height: 10%;
+	font-size: 1.6em;
+	background-color: rgba(0, 0, 0, .6);
+	color:seashell;
+}
+
+/*Gerneral Purpose*/
+.des_headers{
+	color:#dea700; 
+}
+.site_map_link{
+	text-decoration-line: none;
+	color:#DE3800;
+}
+.site_map_link:hover{
+	text-decoration-line: underline;
+	text-decoration-style: dashed;
+	text-decoration-color: #dea700;
+	color:#FF784A;
+}
+
+/*events_and_services*/
+.div_test{
+	width: 90%;
+	height: 35%; 
+	border: 1px solid black;
+}
+.events_table_data{
+	padding: 5px; 
+	padding-left: 10px;
+	color:#dea700;
+	text-decoration-line: underline;
+	text-decoration-color: #DE3800;
+	text-underline-offset: 4px;
+}
+.events_table_separator{
+	border-top: 1px solid #DE3800;
+}
+.events_title{
+	font-size: 2em;
+	color: #DE3800;
+}
+.events_cell_info{
+	padding: 5px; 
+	padding-left: 10px;
+}
+
+/*faculty.html*/
+.div_mid{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 1300px;
+}
+.face_cell{
+	box-align: center;
+	vertical-align: middle;
+}
+.faculty_frame_body{
+	background-image: url("images/news_holder4.png");
+	background-repeat: none;
+	background-size: cover;
+	
+	border: 1px solid black;
+	height: 300px;
+	width: 100%;
+}
+.faculty_header{
+	color:#dea700; 
+	font-size: 3em; 
+	text-decoration: #DE3800; 
+	text-decoration-line: underline;
+}
+.faculty_table{
+	width: 80%;
+}
+.table_face_cell{
+	vertical-align: center;
+}
+.table_name_cell{
+	vertical-align: bottom; 
+	text-align: left; 
+	font-size: 1.4em; 
+	border-bottom: 1px solid #DE3800;
+	height: 20px;
+}
+.table_name_link{
+	text-decoration: none; 
+	font-size: larger;
+	color:#DE3800;
+}
+.table_name_link:hover{
+	color:#FF784A;
+}
+
+.table_cell_PC{
+	vertical-align: middle; 
+	text-align: left; 
+}
+.table_cell_header{
+	border-bottom: 1px solid #DE3800; 
+	display: inline-block; 
+	line-height: 1; 
+	margin-bottom: 5px; 
+	color:#dea700
+}
+.table_cell_info{
+	vertical-align: top;
+	text-align: left;
+}
+.table_cell_spacer{
+	border-top: 1px solid #DE3800;
+	height: 20px;
+}
+
+/*student_form.html*/
+.form_headers{
+	color: #DE3800;
+	font-size: 1.6em;
+}
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+  
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+  
+	border: 2px solid #FF784A;
+	transition: 0.2s all linear;
+
+	position: relative;
+	top: 4px;
+  }
+  input:checked {
+	border: 2px solid #DE3800;
+	width: 16px;
+	height: 16px;
+	border-radius: 0;
+	background-color: #fcc726;
+  }

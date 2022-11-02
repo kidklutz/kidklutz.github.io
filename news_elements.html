@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<head>
+		<title>Iframe: News Slider</title>
+		<link rel="stylesheet" type="text/css" href="carit_css.css">
+	</head>
+	<body class="news_body">
+		<table class="news_table">
+			<tr>
+				<td>
+					<button id="prev" onclick="changeImage(this.id)">Prev</button>
+				</td>
+				<td class="news_headline">
+					<textarea readonly id="area">Students save restaurant during COVID</textarea>
+				</td>
+				<td align="right">
+					<button id="next" onclick="changeImage(this.id)">Next</button>
+					<script type="text/javascript">
+						function changeImage(button_ID){
+							var url = window.getComputedStyle(document.body).getPropertyValue("background-image");
+							var comp =  "url(\""+ url.slice(url.length-24);
+
+							if(comp === "url(\"mages/news_holder2.png\")" || comp === "url(\"mages/news_holder3.png\")") {
+								comp = comp.substr(0, 5) + "i" + comp.substr(5);
+							}
+							//alert(comp);
+
+							if(comp === "url(\"images/news_holder.png\")"){
+								//alert("first");
+								if(document.getElementById(button_ID).getAttribute("id") === "prev"){
+									document.body.style.backgroundImage = "url(\"images/news_holder3.png\")";
+									document.getElementById("area").innerHTML = "Researcher reveals data warehouse flaws";
+								}else{
+									document.body.style.backgroundImage = "url(\"images/news_holder2.png\")";
+									document.getElementById("area").innerHTML = "Project blows out Creative Solutions Fair";
+								}
+							}else if(comp === "url(\"images/news_holder2.png\")"){
+								//alert("second");
+								if(document.getElementById(button_ID).getAttribute("id") === "prev"){
+									document.body.style.backgroundImage = "url(\"images/news_holder.png\")";
+									document.getElementById("area").innerHTML = "Students save restaurant during COVID";
+								}else{
+									document.body.style.backgroundImage = "url(\"images/news_holder3.png\")";
+									document.getElementById("area").innerHTML = "Researcher reveals data warehouse flaws";
+								}
+							}else if(comp === "url(\"images/news_holder3.png\")"){
+								//alert("third");
+								if(document.getElementById(button_ID).getAttribute("id") === "prev"){
+									document.body.style.backgroundImage = "url(\"images/news_holder2.png\")";
+									document.getElementById("area").innerHTML = "Project blows out Creative Solutions Fair";
+								}else{
+									document.body.style.backgroundImage = "url(\"images/news_holder.png\")";
+									document.getElementById("area").innerHTML = "Students save restaurant during COVID";
+								}
+							}
+						}
+					</script>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
